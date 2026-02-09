@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onion AI - Peta Informasi Lahan Pertanian</title>
+    <title>Onion AI - Smart Precision Farming Indonesia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/photo/2.png">
 </head>
 <body>
-    <!-- Header & Navigation -->
+    
     <header>
         <nav class="navbar">
             <div class="container nav-container">
                 <a href="#" class="logo">
-                    <i class="fas fa-seedling"></i>
+                    <img src="assets/photo/2.png" alt="OnionAI Logo" class="brand-logo">
                     <span>Onion<span class="ai-text">AI</span></span>
                 </a>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#home" class="nav-link">Beranda</a></li>
-                    <li class="nav-item"><a href="#peta" class="nav-link">Peta Pertanian</a></li>
-                    <li class="nav-item"><a href="#monitoring" class="nav-link">Monitoring</a></li>
-                    <li class="nav-item"><a href="#komoditas" class="nav-link">Komoditas</a></li>
-                    <li class="nav-item"><a href="#data" class="nav-link">Data Produktivitas</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Bawang</a></li>
+                    <li><a href="#app-features">Fitur AI</a></li>
+                    <li><a href="#bawang-data">Data</a></li>
+                    <li><a href="#contact" class="btn-contact">Kontak</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -35,433 +34,153 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container hero-container">
+        <div class="container hero-grid">
             <div class="hero-text">
-                <h1 class="hero-title">Peta Informasi Lahan Pertanian</h1>
-                <p class="hero-subtitle">Kini telah hadir peta informasi lahan pertanian untuk seluruh kabupaten dan kota Indonesia secara online.</p>
-                <a href="#peta" class="cta-button">Cek Sekarang <i class="fas fa-arrow-right"></i></a>
+                <span class="badge"><i class="fas fa-robot"></i> Inovasi Pertanian 4.0</span>
+                <h1 class="hero-title">Presisi Data untuk <br><span class="highlight">Kedaulatan Pangan</span></h1>
+                <p class="hero-subtitle">Visualisasi lahan pertanian real-time di seluruh Indonesia. Mengubah cara petani mengelola lahan dengan teknologi AI terkini.</p>
+                <div class="hero-btns">
+                    <a href="#bawang-data" class="cta-button">Lihat Statistik <i class="fas fa-chart-bar"></i></a>
+                    <a href="#app-features" class="secondary-button">Coba Demo AI <i class="fas fa-mobile-alt"></i></a>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lahan Pertanian Indonesia" class="hero-img">
-                <div class="map-overlay">
-                    <div class="map-marker" style="top: 30%; left: 40%;">
-                        <div class="marker-pulse"></div>
-                        <div class="marker-tooltip">Jawa Barat</div>
-                    </div>
-                    <div class="map-marker" style="top: 50%; left: 60%;">
-                        <div class="marker-pulse"></div>
-                        <div class="marker-tooltip">Jawa Timur</div>
-                    </div>
-                    <div class="map-marker" style="top: 40%; left: 55%;">
-                        <div class="marker-pulse"></div>
-                        <div class="marker-tooltip">Jawa Tengah</div>
+            <div class="hero-visual">
+                <div class="image-stack">
+                    <img src="assets/photo/bawang.jpg" alt="Lahan Bawang" class="main-img">
+                    <div class="floating-card">
+                        <div class="icon-box"><i class="fas fa-seedling"></i></div>
+                        <div>
+                            <span>Produktivitas</span>
+                            <strong>+12.5% Tahun Ini</strong>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container about-container">
-            <div class="section-header">
-                <h2 class="section-title">SELAMAT DATANG DI ONIONAI</h2>
-                <h3 class="section-subtitle">Kami ada Untuk Kemajuan Pertanian Indonesia</h3>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pertanian Indonesia">
+    <section class="definition-section" id="about">
+        <div class="container">
+            <div class="def-card">
+                <div class="def-icon">
+                    <img src="assets/photo/1.png" alt="Mascot">
                 </div>
-                <div class="about-text">
-                    <p>Sektor Pertanian di Indonesia saat ini masih menjadi ruang untuk rakyat kecil. Kurang lebih 100 juta jiwa atau hampir separuh dari jumlah rakyat Indonesia bekerja di sektor pertanian. Oleh karena itu kami mempunyai banyak bakat yang berpotensi untuk menghasilkan produk industri, seperti tanaman obat-obatan, makanan, minuman, dan bahan kimia.</p>
-                    <div class="stats">
+                <div class="def-content">
+                    <h2>Mengenal Bawang Merah</h2>
+                    <p class="scientific-name">Allium cepa L. var. aggregatum</p>
+                    <p class="def-text">
+                        Bawang merah adalah bumbu dapur utama dan komoditas hortikultura bernilai ekonomi tinggi dengan umur panen pendek (sekitar 60-70 hari). Kaya akan kandungan antosianin (pigmen warna), senyawa sulfur, vitamin C, dan antioksidan, bawang merah dimanfaatkan sebagai penyedap masakan, obat tradisional (masuk angin, diabetes), dan bahan antibakteri.
+                    </p>
+                    <div class="def-tags">
+                        <span><i class="fas fa-clock"></i> Panen 60 Hari</span>
+                        <span><i class="fas fa-shield-alt"></i> Antioksidan</span>
+                        <span><i class="fas fa-coins"></i> Bernilai Tinggi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-features" id="app-features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Segera Hadir di Mobile</span>
+                <h2 class="section-title">Teknologi Pintar dalam Genggaman</h2>
+                <p>OnionAI Mobile Apps akan membantu petani mendeteksi masalah lebih dini.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="f-icon bug"><i class="fas fa-bug"></i></div>
+                    <h3>Deteksi Hama & Penyakit</h3>
+                    <p>Ambil foto daun bawang, AI kami akan menganalisis jenis hama (Ulat Grayak, Thrips) dan memberikan solusi penanganan secara instan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon calendar"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Prediksi Masa Panen</h3>
+                    <p>Estimasi waktu panen presisi berdasarkan data cuaca real-time dan usia tanam untuk memaksimalkan kualitas umbi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon chart"><i class="fas fa-chart-line"></i></div>
+                    <h3>Analisis Pasar</h3>
+                    <p>Pantau harga bawang merah terkini di pasar induk untuk menentukan waktu jual terbaik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bawang-data" id="bawang-data">
+        <div class="container">
+            <div class="data-layout">
+                <div class="chart-wrapper">
+                    <div class="chart-header">
+                        <h3>Tren Produksi Nasional</h3>
+                        <div class="live-indicator"><span class="dot"></span> Update 2024</div>
+                    </div>
+                    <div class="canvas-container">
+                        <canvas id="bawangChart"></canvas>
+                    </div>
+                </div>
+                <div class="data-info">
+                    <div class="source-tag">
+                        <i class="fas fa-database"></i> Sumber: <a href="https://satudata.pertanian.go.id" target="_blank">satudata.pertanian.go.id</a>
+                    </div>
+                    <h2 class="data-title">Statistik & Kinerja</h2>
+                    <p>Peningkatan luas tanam di wilayah sentra seperti Brebes dan Nganjuk berkontribusi signifikan terhadap stok nasional.</p>
+                    
+                    <div class="stats-row">
                         <div class="stat-item">
-                            <h4>100 Juta+</h4>
-                            <p>Pekerja Pertanian</p>
+                            <span class="stat-val">1.5M+</span>
+                            <span class="stat-label">Ton Produksi</span>
                         </div>
                         <div class="stat-item">
-                            <h4>40%+</h4>
-                            <p>Angkatan Kerja</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>50+</h4>
-                            <p>Komoditas Unggulan</p>
+                            <span class="stat-val up">4.2% <i class="fas fa-arrow-up"></i></span>
+                            <span class="stat-label">Kenaikan YoY</span>
                         </div>
                     </div>
+                    <a href="https://satudata.pertanian.go.id" target="_blank" class="text-link">Lihat Laporan Lengkap &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Monitoring Section -->
-    <section class="monitoring" id="monitoring">
-        <div class="container monitoring-container">
-            <div class="monitoring-text">
-                <h2 class="section-title">Monitoring Bawang Merah Indonesia</h2>
-                <p>Hutan mangrove mempunyai banyak sekali manfaat untuk indonesia. Kini kami bersama-sama dengan lembaga, kelompok, maupun perseorangan melakukan penanaman dan monitoring mangrove.</p>
-                <a href="#" class="more-button">Lebih Banyak <i class="fas fa-chevron-right"></i></a>
-                
-                <div class="year-slider">
-                    <div class="year-slider-track">
-                        <div class="year-card active" data-year="2018-2020">
-                            <h3>2018/2020</h3>
-                            <p>Periode pertama monitoring dan penanaman mangrove</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 85%"></div>
-                            </div>
-                            <span>85% target tercapai</span>
-                        </div>
-                        <div class="year-card" data-year="2019-2021">
-                            <h3>2019/2021</h3>
-                            <p>Ekspansi program ke 15 provinsi di Indonesia</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 92%"></div>
-                            </div>
-                            <span>92% target tercapai</span>
-                        </div>
-                        <div class="year-card" data-year="2020-2022">
-                            <h3>2020/2022</h3>
-                            <p>Digitalisasi data dan implementasi sistem AI</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 78%"></div>
-                            </div>
-                            <span>78% target tercapai</span>
-                        </div>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo footer-logo">
+                        <img src="assets/photo/2.png" alt="OnionAI Footer" class="brand-logo">
+                        <span>OnionAI</span>
                     </div>
-                    <div class="slider-controls">
-                        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    <p>Solusi digital pertanian presisi untuk masa depan pangan Indonesia yang lebih berdaulat.</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="monitoring-stats">
-                <div class="stats-card">
-                    <h3><span class="counter" data-target="3000">0</span></h3>
-                    <p>Bersama <br>Lembaga/Kelompok</p>
-                    <div class="stats-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                </div>
-                <div class="map-visual">
-                    <h4>Peta Jangkauan</h4>
-                    <div class="map-dots">
-                        <div class="dot" style="top: 20%; left: 30%;"></div>
-                        <div class="dot" style="top: 40%; left: 50%;"></div>
-                        <div class="dot" style="top: 60%; left: 40%;"></div>
-                        <div class="dot" style="top: 30%; left: 60%;"></div>
-                        <div class="dot" style="top: 50%; left: 70%;"></div>
-                        <div class="dot" style="top: 70%; left: 55%;"></div>
-                        <div class="dot" style="top: 45%; left: 35%;"></div>
-                        <div class="dot" style="top: 65%; left: 45%;"></div>
-                        <div class="dot" style="top: 35%; left: 45%;"></div>
-                        <div class="dot" style="top: 55%; left: 65%;"></div>
-                    </div>
-                    <p>Jangkauan program di 34 provinsi di Indonesia</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Digital Farmland Section -->
-    <section class="digital-farmland" id="peta">
-        <div class="container digital-container">
-            <div class="digital-image">
-                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pertanian Digital">
-                <div class="digital-overlay">
-                    <div class="overlay-item">
-                        <i class="fas fa-tint"></i>
-                        <p>Kadar Pupuk</p>
-                    </div>
-                    <div class="overlay-item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <p>Waktu Tanam</p>
-                    </div>
-                    <div class="overlay-item">
-                        <i class="fas fa-bug"></i>
-                        <p>Prediksi Hama</p>
-                    </div>
-                </div>
-            </div>
-            <div class="digital-text">
-                <h2 class="section-title">Ketahui Luas Lahan Pertanian Indonesia Secara Digital</h2>
-                <p>Kami mencakup data lahan pertanian seluruh Indonesia dengan harapan dapat lebih meningkatkan produktivitas lahan Indonesia. Terutama untuk mengetahui kadar pupuk, waktu tanam, dan prediksi hama. Yuk, cek dengan klik tombol dibawah ini.</p>
-                <a href="#" class="learn-button">Pelajari Detail <i class="fas fa-book-open"></i></a>
-                
-                <div class="features">
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Peta Digital Interaktif</h4>
-                            <p>Akses peta lahan pertanian seluruh Indonesia dengan detail lengkap.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Analisis Data Real-time</h4>
-                            <p>Dapatkan analisis produktivitas lahan secara real-time dan akurat.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Commodities Section -->
-    <section class="commodities" id="komoditas">
-        <div class="container commodities-container">
-            <div class="section-header">
-                <h2 class="section-title">Komoditi Pertanian Indonesia</h2>
-                <p class="section-subtitle">Berbagai komoditas unggulan yang menjadi tulang punggung pertanian Indonesia</p>
-            </div>
-            
-            <div class="commodities-grid">
-                <div class="commodity-card" data-commodity="padi">
-                    <div class="commodity-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Padi</h3>
-                    <p>Tanaman padi merupakan makanan pokok masyarakat Indonesia.</p>
-                    <div class="commodity-info">
-                        <span><i class="fas fa-chart-bar"></i> 54% produksi nasional</span>
-                    </div>
-                </div>
-                <div class="commodity-card" data-commodity="kopi">
-                    <div class="commodity-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <h3>Biji Kopi</h3>
-                    <p>Kopi memiliki peranan penting bagi perekonomian masyarakat Indonesia.</p>
-                    <div class="commodity-info">
-                        <span><i class="fas fa-chart-bar"></i> 4th produsen dunia</span>
-                    </div>
-                </div>
-                <div class="commodity-card" data-commodity="cabai">
-                    <div class="commodity-icon">
-                        <i class="fas fa-pepper-hot"></i>
-                    </div>
-                    <h3>Cabai</h3>
-                    <p>Cabai merupakan komoditas sayuran yang memiliki nilai ekonomi tinggi.</p>
-                    <div class="commodity-info">
-                        <span><i class="fas fa-chart-bar"></i> 2.8 juta ton/tahun</span>
-                    </div>
-                </div>
-                <div class="commodity-card" data-commodity="jagung">
-                    <div class="commodity-icon">
-                        <i class="fas fa-corn"></i>
-                    </div>
-                    <h3>Jagung</h3>
-                    <p>Jagung adalah bahan pangan pokok dan pakan ternak.</p>
-                    <div class="commodity-info">
-                        <span><i class="fas fa-chart-bar"></i> 19 juta ton/tahun</span>
-                    </div>
-                </div>
-                <div class="commodity-card" data-commodity="terong">
-                    <div class="commodity-icon">
-                        <i class="fas fa-eggplant"></i>
-                    </div>
-                    <h3>Terong</h3>
-                    <p>Terong merupakan jenis sayuran tahunan semusim.</p>
-                    <div class="commodity-info">
-                        <span><i class="fas fa-chart-bar"></i> 500 ribu ton/tahun</span>
-                    </div>
-                </div>
-                <div class="commodity-card" data-commodity="kakao">
-                    <div class="commodity-icon">
-                        <i class="fas fa-mortar-pestle"></i>
-                    </div>
-                    <h3>Kakao</h3>
-                    <p>Kakao adalah bahan baku cokelat. Indonesia penghasil kakao terbesar.</p>
-                    <div class="commodity-info">
-                        <span><i class="fas fa-chart-bar"></i> 3rd produsen dunia</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="commodities-chart">
-                <div class="chart-container">
-                    <canvas id="commodityChart"></canvas>
-                </div>
-                <div class="chart-info">
-                    <h4>Distribusi Komoditas Pertanian Indonesia</h4>
-                    <p>Visualisasi persentase luas lahan berdasarkan komoditas utama tahun 2023</p>
-                    <ul class="chart-legend">
-                        <li><span class="legend-color" style="background-color: #4CAF50;"></span> Padi: 45%</li>
-                        <li><span class="legend-color" style="background-color: #8BC34A;"></span> Jagung: 20%</li>
-                        <li><span class="legend-color" style="background-color: #FFC107;"></span> Kopi: 15%</li>
-                        <li><span class="legend-color" style="background-color: #FF9800;"></span> Cabai: 8%</li>
-                        <li><span class="legend-color" style="background-color: #9C27B0;"></span> Lainnya: 12%</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Productivity Data Section -->
-    <section class="productivity" id="data">
-        <div class="container productivity-container">
-            <div class="productivity-text">
-                <h2 class="section-title">Menuju Satu Data Produktivitas Pertanian di Indonesia</h2>
-                <p>Data pertanian yang akurat adalah sumber terpenting terciptanya kebijakan yang efektif. Namun, isu ini lebih dikaitkan dengan data luas pemanfaatan yang dimiliki oleh berbagai pemangku kepentingan. Kami hadir menyelaraskan data produktivitas pertanian sehingga Anda dapat memperoleh informasi terkini tentang hasil produksi.</p>
-                <a href="#" class="learn-button">Pelajari Detail <i class="fas fa-database"></i></a>
-                
-                <div class="data-stats">
-                    <div class="data-stat">
-                        <h4><span class="counter" data-target="85">0</span>%</h4>
-                        <p>Akurasi Data</p>
-                    </div>
-                    <div class="data-stat">
-                        <h4><span class="counter" data-target="34">0</span></h4>
-                        <p>Provinsi Terjangkau</p>
-                    </div>
-                    <div class="data-stat">
-                        <h4><span class="counter" data-target="500">0</span>+</h4>
-                        <p>Kabupaten/Kota</p>
-                    </div>
-                </div>
-            </div>
-            <div class="productivity-visual">
-                <div class="data-visual">
-                    <div class="visual-item">
-                        <div class="visual-progress">
-                            <svg class="progress-ring" width="120" height="120">
-                                <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
-                            </svg>
-                            <span class="progress-value">85%</span>
-                        </div>
-                        <p>Data Terintegrasi</p>
-                    </div>
-                    <div class="visual-item">
-                        <div class="visual-progress">
-                            <svg class="progress-ring" width="120" height="120">
-                                <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
-                            </svg>
-                            <span class="progress-value">92%</span>
-                        </div>
-                        <p>Data Tervalidasi</p>
-                    </div>
-                </div>
-                <div class="data-flow">
-                    <h4>Aliran Data Pertanian</h4>
-                    <div class="flow-chart">
-                        <div class="flow-step">
-                            <div class="step-icon"><i class="fas fa-tractor"></i></div>
-                            <p>Petani & Lahan</p>
-                        </div>
-                        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow-step">
-                            <div class="step-icon"><i class="fas fa-tablet-alt"></i></div>
-                            <p>Input Data Digital</p>
-                        </div>
-                        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow-step">
-                            <div class="step-icon"><i class="fas fa-cloud"></i></div>
-                            <p>Pusat Data OnionAI</p>
-                        </div>
-                        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow-step">
-                            <div class="step-icon"><i class="fas fa-chart-pie"></i></div>
-                            <p>Analisis & Visualisasi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Information Section -->
-    <section class="information">
-        <div class="container information-container">
-            <div class="information-card">
-                <h3>Informasi Pertanian</h3>
-                <p>Untuk informasi lengkap tentang lahan pertanian, silahkan klik disini.</p>
-                <a href="#" class="info-button">Lihat Informasi Lainnya <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <footer class="contact" id="contact">
-        <div class="container contact-container">
-            <div class="contact-info">
-                <div class="footer-logo">
-                    <i class="fas fa-seedling"></i>
-                    <span>Onion<span class="ai-text">AI</span></span>
-                </div>
-                <p class="footer-description">Platform informasi lahan pertanian Indonesia untuk meningkatkan produktivitas dan efisiensi sektor pertanian nasional.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>Tautan Cepat</h4>
+                <div class="footer-nav">
+                    <h4>Perusahaan</h4>
                     <ul>
-                        <li><a href="#home">Beranda</a></li>
-                        <li><a href="#peta">Peta Pertanian</a></li>
-                        <li><a href="#monitoring">Monitoring</a></li>
-                        <li><a href="#komoditas">Komoditas</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#app-features">Teknologi</a></li>
+                        <li><a href="#contact">Karir</a></li>
                     </ul>
                 </div>
-                <div class="link-group">
-                    <h4>Sumber Daya</h4>
+                <div class="footer-nav">
+                    <h4>Layanan</h4>
                     <ul>
-                        <li><a href="#">Publikasi Data</a></li>
-                        <li><a href="#">Statistik Pertanian</a></li>
-                        <li><a href="#">Panduan Penggunaan</a></li>
-                        <li><a href="#">Blog & Artikel</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h4>Dukungan</h4>
-                    <ul>
-                        <li><a href="#">Bantuan & FAQ</a></li>
-                        <li><a href="#">Hubungi Kami</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
-                        <li><a href="#">Syarat Layanan</a></li>
+                        <li><a href="#">Analisis Tanah</a></li>
+                        <li><a href="#">Deteksi Hama</a></li>
+                        <li><a href="#">Konsultasi Ahli</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="contact-details">
-                <h4>Mempunyai Pertanyaan atau Ada yang Perlu Dibantu?</h4>
-                <p>Jika Anda memiliki pertanyaan atau pertanyaan lain, silahkan hubungi kami melalui email:</p>
-                <a href="mailto:info@onionai.com" class="contact-email">
-                    <i class="fas fa-envelope"></i> info@onionai.com
-                </a>
-                <div class="newsletter">
-                    <h4>Berlangganan Newsletter</h4>
-                    <p>Dapatkan informasi terbaru tentang pertanian Indonesia</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Masukkan email Anda" required>
-                        <button type="submit">Berlangganan</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2023 OnionAI. Hak Cipta Dilindungi. Dibuat untuk Kemajuan Pertanian Indonesia.</p>
+            <div class="copyright">
+                <p>&copy; 2024 OnionAI Indonesia. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
