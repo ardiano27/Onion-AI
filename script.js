@@ -73,4 +73,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+    // 4. ANIMASI SCROLL REVEAL (Tambahan untuk efek muncul)
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-visible');
+            }
+        });
+    }, observerOptions);
+
+    // Menerapkan animasi ke semua section termasuk section Berita baru
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('reveal-hidden');
+        observer.observe(section);
+    });
 });
+
+// Style Dinamis untuk Animasi
+const style = document.createElement('style');
+style.textContent = `
+    .reveal-hidden { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+    .reveal-visible { opacity: 1; transform: translateY(0); }
+`;
+document.head.appendChild(style);
